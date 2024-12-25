@@ -1,0 +1,19 @@
+digraph "Call graph: main.ll" {
+	label="Call graph: main.ll";
+
+	Node0x88d7550 [shape=record,label="{main}"];
+	Node0x88d7550 -> Node0x88d7600;
+	Node0x88d7550 -> Node0x88d7ac0;
+	Node0x88d7550 -> Node0x88d7ba0;
+	Node0x88d7550 -> Node0x88d7cd0;
+	Node0x88d7550 -> Node0x88d7fa0;
+	Node0x88d7550 -> Node0x88d7ea0;
+	Node0x88d7550 -> Node0x88d7f20;
+	Node0x88d7ac0 [shape=record,label="{calculate_circle_area}"];
+	Node0x88d7ba0 [shape=record,label="{calculate_circle_perimeter}"];
+	Node0x88d7cd0 [shape=record,label="{printf}"];
+	Node0x88d7ea0 [shape=record,label="{init_rectangle}"];
+	Node0x88d7f20 [shape=record,label="{calculate_rectangle_area}"];
+	Node0x88d7fa0 [shape=record,label="{calculate_rectangle_perimeter}"];
+	Node0x88d7600 [shape=record,label="{init_circle}"];
+}

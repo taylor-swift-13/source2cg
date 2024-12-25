@@ -1,0 +1,110 @@
+{
+    "test_1.c": [
+        {
+            "main": "main",
+            "dep": "funcA, funcB, funcC"
+        },
+        {
+            "main": "test_1.c",
+            "dep": "stdio.h"
+        },
+        {
+            "main": "funcC",
+            "dep": "funcA, funcB"
+        },
+        {
+            "main": "funcB",
+            "dep": "funcA, funcC"
+        },
+        {
+            "main": "funcA",
+            "dep": "funcB, funcC"
+        }
+    ],
+    "circle.c": [
+        {
+            "main": "calculate_circle_area",
+            "dep": "calculate_area"
+        },
+        {
+            "main": "circle.c",
+            "dep": "circle.h, math.h, stdio.h, shape.h"
+        },
+        {
+            "main": "calculate_circle_perimeter",
+            "dep": "calculate_perimeter"
+        }
+    ],
+    "rectangle.h": [
+        {
+            "main": "calculate_rectangle_area",
+            "dep": "calculate_area"
+        },
+        {
+            "main": "rectangle.h",
+            "dep": "main.c, rectangle.c"
+        },
+        {
+            "main": "calculate_rectangle_perimeter",
+            "dep": "calculate_perimeter"
+        },
+        {
+            "main": "rectangle.h",
+            "dep": "shape.h"
+        }
+    ],
+    "main.c": [
+        {
+            "main": "main.c",
+            "dep": "stdio.h, circle.h, rectangle.h, shape.h"
+        },
+        {
+            "main": "main",
+            "dep": "calculate_circle_area, calculate_circle_perimeter, calculate_rectangle_area, calculate_rectangle, _perimeter, init_circle, init_rectangle, calculate_area, calculate_perimeter"
+        }
+    ],
+    "rectangle.c": [
+        {
+            "main": "calculate_rectangle_area",
+            "dep": "calculate_area"
+        },
+        {
+            "main": "rectangle.c",
+            "dep": "rectangle.h, stdio.h, shape.h"
+        },
+        {
+            "main": "calculate_rectangle_perimeter",
+            "dep": "calculate_perimeter"
+        }
+    ],
+    "shape.h": [
+        {
+            "main": "shape.h",
+            "dep": "circle.h, rectangle.h, shape.c, circle.c, main.c, rectangle.c"
+        }
+    ],
+    "circle.h": [
+        {
+            "main": "calculate_circle_perimeter",
+            "dep": "calculate_perimeter"
+        },
+        {
+            "main": "circle.h",
+            "dep": "shape.h"
+        },
+        {
+            "main": "calculate_circle_area",
+            "dep": "calculate_area"
+        },
+        {
+            "main": "circle.h",
+            "dep": "circle.c, main.c"
+        }
+    ],
+    "shape.c": [
+        {
+            "main": "shape.c",
+            "dep": "shape.h, stdio.h"
+        }
+    ]
+}
